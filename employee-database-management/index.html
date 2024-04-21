@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>Employee Management System</h1>
+        <button class="create-employee">Add Employee</button>
+      </header>
+
+      <div class="employees">
+        <!-- List of Employee Names -->
+        <div class="employee-name-container">
+          <span class="employee-name-title">Employee List</span>
+          <div class="employee-name-list"></div>
+        </div>
+
+        <!-- Details of Each Employee -->
+        <div class="employee-details-container">
+          <span class="employee-details-title">Employee Details</span>
+          <div class="employee-details-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Employee Modal -->
+    <div class="addEmployee-container">
+      <form class="addEmployee-create">
+        Add a new employee
+
+        <div>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="Last Name" required />
+        </div>
+        <input type="text" name="imageUrl" placeholder="Image Url (Optional)" />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <input
+          type="number"
+          name="contactNumber"
+          placeholder="Contact Number"
+          required
+        />
+        <input type="number" name="salary" placeholder="Salary" required />
+        <input
+          type="date"
+          name="dob"
+          placeholder="Date of Birth"
+          class="addEmployee-dob"
+          required
+        />
+        <input type="submit" class="addEmployee-submit" value="Submit" />
+      </form>
+    </div>
+
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+  </body>
+</html>
