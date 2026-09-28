@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -108,4 +108,33 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-} */
+}
+
+.otp-input-box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.otp-input-box {
+  width: 40px;
+  height: 50px;
+  text-align: center;
+}
+
+.otp-input-box::highlight {
+  border: 1px solid red;
+}
+
+/* Target Chrome, Safari, Edge, and Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Target Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
