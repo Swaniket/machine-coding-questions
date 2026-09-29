@@ -1,4 +1,4 @@
-Functional Requirements:
+### Functional Requirements:
 1. Real-time suggestions
 2. Dynamic & static data support
 3. Debouncing
@@ -6,7 +6,7 @@ Functional Requirements:
 5. Highlighted Match
 6. Loading Indicator.
 
-Non-Functional Requirement:
+### Non-Functional Requirement:
 1. Perfomant
 2. Responsiveness
 3. Security

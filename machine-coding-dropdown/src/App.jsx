@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
@@ -41,28 +38,24 @@ function App() {
 
   return (
     <>
-    <select onChange={handleChange} defaultValue="">
-      <option value="" disabled>Please select a country</option>
-     {countries.map((country) => (
-        <option value={country.value} key={country.value}>{country.name}</option>
-     ))} 
-    </select>
+      <select onChange={handleChange} defaultValue="">
+        <option value="" disabled>Please select a country</option>
+        {countries.map((country) => (
+          <option value={country.value} key={country.value}>{country.name}</option>
+        ))}
+      </select>
 
-     {selectedCountry != null ? 
-     <select>
-      {countries.filter((country) => country.value === selectedCountry)[0].cities.map((city) => (
-        <option key={city}>
-          {city}
-        </option>
-      ))}
-    </select>
-     
-     : null}
-    
-    
-    
+      {selectedCountry != null ?
+        <select>
+          {countries.filter((country) => country.value === selectedCountry)[0].cities.map((city) => (
+            <option key={city}>
+              {city}
+            </option>
+          ))}
+        </select>
+        : null}
     </>
-    
+
   )
 }
 
